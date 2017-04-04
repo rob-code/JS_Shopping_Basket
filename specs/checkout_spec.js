@@ -26,4 +26,14 @@ describe('Checkout', function(){
     assert.strictEqual(3400, checkout.getRawTotal());
   })
 
+it('can start to count the number of each item in the shopping basket', function(){
+  basket.addItem(item1);
+  basket.addItem(item2);
+  basket.addItem(item3);
+  checkout.applyBogoF();
+
+
+}) 
+
+
 })

@@ -10,7 +10,52 @@ Checkout.prototype = {
       totalPrice += item.price;
     }
     return totalPrice;
+  },
+
+  applyBogoF: function(){
+
+    var counts = new Object(null);
+
+    for(i = 0; i < this.basket.numberOfItems(); i++){
+      var item = this.basket.contents[i];
+      if (counts[item.name]) {
+          counts[item.name] = counts[item.name] + 1;
+      } else {
+          counts[item.name] = 1;
+      }
+
+    }
+
+      console.log(counts.length);
+
+    // for(i = 0; i < counts.length; i++){
+
+    //   console.log("hello");      
+    // }
+
+
+
+
+
+
+
+
+
   }
+
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
 
 module.exports = Checkout;
