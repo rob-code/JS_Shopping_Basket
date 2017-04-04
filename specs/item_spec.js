@@ -15,6 +15,13 @@ it('Should have a name', function() {
   assert.strictEqual("bread", item1.name); 
 })
 
+it('Should have a price', function() {
+  assert.strictEqual(130, item1.price); 
+})
+
+it('Should have an offer', function() {
+  assert.strictEqual(true, item1.hasOffer); 
+})
 
 
 
