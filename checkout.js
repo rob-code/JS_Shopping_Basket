@@ -26,7 +26,13 @@ Checkout.prototype = {
 
     }
 
-      console.log(counts.length);
+      console.log(counts);
+
+      for (var item in counts) {
+        console.log(item + " -> " + counts[item]);
+      }
+
+
 
     // for(i = 0; i < counts.length; i++){
 
