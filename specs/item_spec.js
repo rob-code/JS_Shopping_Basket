@@ -1,5 +1,5 @@
 var assert = require('assert');
-var Athlete = require('../item.js');  //its the export file that is being exposed 
+var Item = require('../item.js');  //its the export file that is being exposed 
 
 describe('Item', function() {
 
@@ -10,6 +10,15 @@ beforeEach(function(){
  item1 = new Item("bread", 130, true);
  item2 = new Item("milk", 85, false);
 })
+
+it('Should have a name', function() {
+  assert.strictEqual("bread", item1.name); 
+})
+
+
+
+
+
 
 
 });

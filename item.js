@@ -3,3 +3,7 @@ var Item = function (name, price, hasOffer) {
     this.price = price;
     this.hasOffer = hasOffer;
 }
+
+
+
+module.exports = Item;
