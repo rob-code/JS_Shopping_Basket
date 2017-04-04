@@ -10,6 +10,11 @@ Basket.prototype = {
 
   addItem: function(item){
     this.contents.push(item);
+  },
+
+  removeItem: function(item){
+    var index = this.contents.indexOf(item);
+    this.contents.splice(index, 1)
   }
 
 }

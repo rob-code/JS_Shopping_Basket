@@ -26,4 +26,13 @@ describe('Basket', function(){
     assert.strictEqual(2, basket.numberOfItems());
   })
 
+  it('should be able to remove items', function(){
+    basket.addItem(item1);
+    basket.addItem(item2);
+    basket.removeItem(item1);
+    assert.strictEqual(1, basket.numberOfItems());
+  })
+
+
+
 })
